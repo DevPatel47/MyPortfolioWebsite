@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*---------------------------------------- Global Variables ---------------------------------------- */
+:root {
+    --primary-text-color: #ffffff;
+    --secondary-text-color: #05009a;
+    --primary-background-color: #000000;
+    --secondary-background-color: #05009a;
+}
+
+
+/*---------------------------------------- Global styles ---------------------------------------- */
+
+body {
+    font-family: "Poiret One", serif;
+    background-color: var(--primary-background-color);
+    color: var(--primary-text-color);
+}
+
+h1 {
+    font-family: "Roboto", serif;
+    letter-spacing: 2px;
+    font-size: 3rem;
+}
+
+h2 {
+    font-family: "Roboto", serif;
+    font-size: 2rem;
+}
+
+h3 {
+    font-family: "Roboto", serif;
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1.5rem;
+    color: var(--primary-text-color);
+    line-height: 1.8rem;
+    letter-spacing: 1px;
+}
+
+a {
+    text-decoration: none;
+    display: inline block;
+}
+
+ul {
+    list-style: none;
+    font-family: "Roboto", serif;
+    font-size: 1.5rem;
+}
+
+/*---------------------------------------- Utility Classes ---------------------------------------- */
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.button {
+    font-family: "Roboto", serif;
+    color: var(--secondary-text-color);
+    font-size: 1.25rem;
+    text-align: center;
+    font-weight: 700;
+    height: 50px;
+    border: solid var(--secondary-background-color);
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: 0.3s ease-out;
+}
+
+.button:hover {
+    transform: scale(1.2);
+    background-color: var(--secondary-background-color);
+    color: var(--primary-background-color);
+    box-shadow: 0px 0px 20px var(--secondary-background-color);
+}
+
+/*---------------------------------------- Nav Bar ---------------------------------------- */
+
+.main-nav {
+    position:fixed;
+    width: 100%;
+    height: 12vh;
+    box-shadow: 0px 1px 20px var(--secondary-background-color);
+    justify-content: space-between;
+    background-color: var(--primary-background-color);
+    z-index: 1;
+}
+
+.name-logo {
+    letter-spacing: 5px;
+    margin-left: 50px;
+    transition: 0.2 ease-out;
+}
+
+.name-logo:hover {
+    color: var(--secondary-text-color);
+    cursor: default;
+    text-shadow: 0px 0px 20px var(--secondary-text-color);
+}
+
+.nav-links {
+    margin-right: 50px;
+    width: 70%;
+    overflow: hidden;
+}
+
+.nav-links ul {
+    justify-content: end;
+    gap: 50px
+}
+
+.hover-link {
+    color: var(--primary-text-color);
+    transition: 0.3s ease-out;
+}
+
+.hover-link:hover {
+    color: var(--secondary-text-color);
+    text-shadow: 0px 0px 10px var(--secondary-text-color);
+    
+}
+
+/*---------------------------------------- Home Page ---------------------------------------- */
+
+.home-page {
+    width: 100%;
+    height: 112vh;
+    justify-content: space-evenly;
+}
+
+.my-image {
+    width: 40%;
+    height: 60%;
+    justify-content: center;
+}
+
+.my-image img {
+    height: 100%;
+    filter: drop-shadow(0px 0px 20px var(--secondary-background-color));
+}
+
+.my-intro {
+    width: 40%;
+    height: 60%;
+}
+
+.my-intro h1 {
+    margin-top: 50px;
+    font-size: 5rem;
+}
+
+.my-intro h2 {
+    margin-top: 10px;
+}
+
+.my-intro p {
+    margin-top: 30px;
+}
+
+.my-intro h1 span {
+    color: var(--secondary-text-color);
+}
+
+.social-media {
+    flex-direction: row;
+    width: 20%;
+    height: 60px;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+.social-media-logo {
+    color: var(--secondary-background-color);
+    font-size: 40px;
+    transition: 0.3s ease-out;
+}
+
+.social-media-logo:hover {
+    transform: scale(1.2);
+    text-shadow: 0px 0px 20px var(--secondary-background-color);;
+}
+
+.intro-buttons {
+    margin-top: 30px;
+    height: 70px;
+    gap: 30px;
+}
+
+/*---------------------------------------- Education Page ---------------------------------------- */
+
+.education-page {
+    width: 100%;
+    height: 100vh;
+    justify-content: space-evenly;
+}
