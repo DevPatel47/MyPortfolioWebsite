@@ -15,28 +15,28 @@
     <nav>
         <div class="container main-nav flex">
             <div class="name-logo">
-                <h1>DEV</h1>
+                <h1>DEV.</h1>
             </div>
             <div class="nav-links">
                 <ul class="flex">
                     <li><a href="#home-page" class="hover-link">Home</a></li>
                     <li><a href="#education-page" class="hover-link">Education</a></li>
-                    <li><a href="" class="hover-link">Skills</a></li>
-                    <li><a href="" class="hover-link">Certifications</a></li>
-                    <li><a href="" class="hover-link">Projects</a></li>
-                    <li><a href="" class="hover-link">Contact Me</a></li>
+                    <li><a href="#skills-page" class="hover-link">Skills</a></li>
+                    <li><a href="#certifications-page" class="hover-link">Certifications</a></li>
+                    <li><a href="#projects-page" class="hover-link">Projects</a></li>
+                    <li><a href="#contact-me-page" class="hover-link">Contact Me</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Main Body -->
-    <main>
+    <main class="main-body flex">
         <section class="home-page flex" id="home-page">
             <div class="my-image flex">
-                <img class="img-my" src="images/my-image.png" alt="Dev's Photo">
+                <img class="img-my" src="images/my-image-1.png" alt="Dev's Photo">
             </div>
-            <div class="my-intro">
+            <div class="my-intro flex">
                 <h1>Hi, I am <span>Dev Patel</span></h1>
                 <h2>I am a Full Stack Developer.</h2>
                 <p>I am a Computer Programming and Analysis student at Durham College in Oshawa, Ontario, with a strong foundation in web development and software development. I am passionate about learning and applying my skills to solve real-world challenges. I enjoy exploring innovative solutions and contributing to impactful projects.</p>
@@ -52,12 +52,24 @@
             </div>
         </section>
         <section class="education-page flex" id="education-page">
-            <div class="education">
+            <div class="education flex">
                 <h1>Education</h1>
-                <p><strong>Computer Programming and Analysis</strong></p>
+                <p class="institution-name"><strong>Computer Programming and Analysis</strong></p>
                 <p>Durham College, Oshawa</p>
                 <a href="https://durhamcollege.ca/programs/computer-programming-analyst-three-year" target="_blank">Learn more</a>
                 <p class="education-date">September 2023 - April 2026</p>
+                <p class="course-work"><strong>Course work</strong></p>
+                <p><span class="course-work-auto-type"></span></p>
+                <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+                <script>
+                    var typed = new Typed(".course-work-auto-type",{
+                        strings: ["Software Development", "Web Development", "Object Oriented Programming", "Software testing", "Systems Development", "Database Development"],
+                        typeSpeed: 50,
+                        backSpeed: 50,
+                        loop: true
+                    })
+                </script>
+
             </div>
             <div class="education-image flex">
                 <i class="fa-solid fa-graduation-cap"></i>
