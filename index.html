@@ -7,7 +7,9 @@
     <title>Dev Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="images\portfolio-favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -39,11 +41,17 @@
             <div class="my-intro flex">
                 <h1>Hi, I am <span>Dev Patel</span></h1>
                 <h2>I am a Full Stack Developer.</h2>
-                <p>I am a Computer Programming and Analysis student at Durham College in Oshawa, Ontario, with a strong foundation in web development and software development. I am passionate about learning and applying my skills to solve real-world challenges. I enjoy exploring innovative solutions and contributing to impactful projects.</p>
+                <p>I am a Computer Programming and Analysis student at Durham College in Oshawa, Ontario, with a strong
+                    foundation in web development and software development. I am passionate about learning and applying
+                    my skills to solve real-world challenges. I enjoy exploring innovative solutions and contributing to
+                    impactful projects.</p>
                 <div class="social-media flex">
-                    <a href="https://www.linkedin.com/in/devpatel47/" target="_blank" class="social-media-logo"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/DevPatel47" target="_blank" class="social-media-logo"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.instagram.com/_.dev47/" target="_blank" class="social-media-logo"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/devpatel47/" target="_blank" class="social-media-logo"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/DevPatel47" target="_blank" class="social-media-logo"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/_.dev47/" target="_blank" class="social-media-logo"><i
+                            class="fa-brands fa-instagram"></i></a>
                 </div>
                 <div class="intro-buttons flex">
                     <a href="mailto:dev080405.patel@gmail.com" class="hire-me button">Hire Me</a>
@@ -56,27 +64,163 @@
                 <h1>Education</h1>
                 <p class="institution-name"><strong>Computer Programming and Analysis</strong></p>
                 <p>Durham College, Oshawa</p>
-                <a href="https://durhamcollege.ca/programs/computer-programming-analyst-three-year" target="_blank">Learn more</a>
+                <a href="https://durhamcollege.ca/programs/computer-programming-analyst-three-year"
+                    target="_blank">Learn more</a>
                 <p class="education-date">September 2023 - April 2026</p>
                 <p class="course-work"><strong>Course work</strong></p>
                 <p><span class="course-work-auto-type"></span></p>
                 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
                 <script>
-                    var typed = new Typed(".course-work-auto-type",{
+                    var typed = new Typed(".course-work-auto-type", {
                         strings: ["Software Development", "Web Development", "Object Oriented Programming", "Software testing", "Systems Development", "Database Development"],
                         typeSpeed: 50,
                         backSpeed: 50,
                         loop: true
                     })
                 </script>
-
             </div>
             <div class="education-image flex">
                 <i class="fa-solid fa-graduation-cap"></i>
             </div>
         </section>
         <section class="skills-page flex" id="skills-page">
+            <div class="skills-page-content flex">
+                <div class="skill-type-selector flex">
+                    <div id="skill-type-technical" class="skill-type-technical skill-type-selector-active flex">
+                        <h2>Technical Skills</h2>
+                    </div>
+                    <div id="skill-type-development" class="skill-type-development flex">
+                        <h2>Development Skills</h2>
+                    </div>
+                    <div id="skill-type-soft" class="skill-type-soft flex">
+                        <h2>Soft Skills</h2>
+                    </div>
+                </div>
+                <div class="skills">
+                    <div id="technical-skills" class="technical-skills display-skills">
+                        <div class="programming-languages-and-web-development flex box-layout">
+                            <p><strong>Programming Languages and Web Development</strong></p>
+                            <ul class="flex">
+                                <li><i class="fa-brands fa-python"></i> Python</li>
+                                <li><i class="fa-brands fa-java"></i> Java</li>
+                                <li><i class="fa-brands fa-js"></i> JavaScript</li>
+                                <li>C#</li>
+                                <li><i class="fa-brands fa-php"></i> PHP</li>
+                                <li><i class="fa-brands fa-html5"></i> HTML5</li>
+                                <li><i class="fa-brands fa-css3-alt"></i> CSS3</li>
+                                <li>Bootstrap</li>
+                                <li>.Net</li>
+                            </ul>
+                        </div>
+                        <div class="databases-and-server-management flex box-layout">
+                            <p><strong>Databases and Server Management</strong></p>
+                            <ul class="flex">
+                                <li>MySQL</li>
+                                <li>PostgreSQL</li>
+                                <li>SQL Server Management Studio</li>
+                                <li>Linus Server</li>                               
+                            </ul>
+                        </div>
+                        <div class="development-tools-and-testing-frameworks flex box-layout">
+                            <p><strong>Development Tools and Testing Frameworks</strong></p>
+                            <ul class="flex">
+                                <li><i class="fa-brands fa-git-alt"></i> Git</li>
+                                <li><i class="fa-brands fa-github"></i> GitHub</li>
+                                <li>Visual Studio Code</li>
+                                <li>Visual Studio</li>
+                                <li>Pycharm</li>
+                                <li>Selenium WebDriver</li>
+                                <li>Swing</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="development-skills" class="development-skills">
+                        <div class="software-development flex box-layout">
+                            <p><strong>Software Development</strong></p>
+                            <ul class="flex">
+                                <li>Object-Oriented Programming (OOP)</li>
+                                <li>Software Design Principles</li>
+                                <li>Software development lifecycle (SDLC)</li>
+                            </ul>
+                        </div>
+                        <div class="testing-and-debugging flex box-layout">
+                            <p><strong>Testing and Debugging</strong></p>
+                            <ul class="flex"> 
+                                <li>Automated Testing</li>
+                                <li>Functional Testing</li>
+                                <li>Unit Testing</li>                            
+                            </ul>
+                        </div>
+                        <div class="problem-solving flex box-layout">
+                            <p><strong>Problem Solving</strong></p>
+                            <ul class="flex">
+                                <li>Data Structures and Algorithms</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="soft-skills" class="soft-skills">
+                        <div class="communication-and-teamwork flex box-layout">
+                            <p><strong>Communication and Teamwork</strong></p>
+                            <ul class="flex">
+                                <li>Effective Team Collaboration</li>
+                                <li>Communication</li>
+                                <li>Adaptability</li>
+                            </ul>
+                        </div>
+                        <div class="testing-and-debugging flex box-layout">
+                            <p><strong>Critical Thinking & Creativity</strong></p>
+                            <ul class="flex">
+                                <li>Strong Analytical Skills</li>
+                                <li>Creativity</li>
+                                <li>Innovation</li>                     
+                            </ul>
+                        </div>
+                        <div class="problem-solving flex box-layout">
+                            <p><strong>Time and Task Management</strong></p>
+                            <ul class="flex">
+                                <li>Excellent Time Management</li>
+                                <li>Organizational Abilities</li>
+                                <li>Eagerness to Learn New Technologies</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    var technicalSkillButton = document.getElementById("skill-type-technical")
+                    var developmentButton = document.getElementById("skill-type-development")
+                    var softSkillButton = document.getElementById("skill-type-soft")
 
+                    technicalSkillButton.addEventListener("click", clickTechnicalSkillButton);
+                    function clickTechnicalSkillButton() {
+                        technicalSkillButton.classList.add("skill-type-selector-active")
+                        softSkillButton.classList.remove("skill-type-selector-active")
+                        developmentButton.classList.remove("skill-type-selector-active")
+                        document.getElementById("technical-skills").classList.add("display-skills")
+                        document.getElementById("development-skills").classList.remove("display-skills")
+                        document.getElementById("soft-skills").classList.remove("display-skills")
+                    }
+
+                    developmentButton.addEventListener("click", clickDevelopmentButton);
+                    function clickDevelopmentButton() {
+                        developmentButton.classList.add("skill-type-selector-active")
+                        softSkillButton.classList.remove("skill-type-selector-active")
+                        technicalSkillButton.classList.remove("skill-type-selector-active")
+                        document.getElementById("development-skills").classList.add("display-skills")
+                        document.getElementById("soft-skills").classList.remove("display-skills")
+                        document.getElementById("technical-skills").classList.remove("display-skills")
+                    }
+
+                    softSkillButton.addEventListener("click", clickSoftSkillButton);
+                    function clickSoftSkillButton() {
+                        softSkillButton.classList.add("skill-type-selector-active")
+                        technicalSkillButton.classList.remove("skill-type-selector-active")
+                        developmentButton.classList.remove("skill-type-selector-active")
+                        document.getElementById("soft-skills").classList.add("display-skills")
+                        document.getElementById("technical-skills").classList.remove("display-skills")
+                        document.getElementById("development-skills").classList.remove("display-skills")
+                    }
+                </script>
+            </div>
         </section>
         <section class="certifications-page flex" id="certifications-page">
 
@@ -92,6 +236,7 @@
     <footer>
 
     </footer>
+
 </body>
 
 </html>
