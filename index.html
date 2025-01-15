@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dev Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="images\portfolio-favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="laptop-media-queries.css">
+    <link rel="stylesheet" href="tablet-media-queries.css">
+    <link rel="stylesheet" href="mobile-media-queries.css">
+    <link rel="shortcut icon" href="images\my-image-1.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -14,7 +17,7 @@
 
 <body>
     <!-- Top Nav Bar -->
-    <nav>
+    <nav class="flex">
         <div class="container main-nav flex">
             <div class="name-logo">
                 <h1>DEV.</h1>
@@ -70,14 +73,6 @@
                 <p class="course-work"><strong>Course work</strong></p>
                 <p><span class="course-work-auto-type"></span></p>
                 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-                <script>
-                    var typed = new Typed(".course-work-auto-type", {
-                        strings: ["Software Development", "Web Development", "Object Oriented Programming", "Software testing", "Systems Development", "Database Development"],
-                        typeSpeed: 50,
-                        backSpeed: 50,
-                        loop: true
-                    })
-                </script>
             </div>
             <div class="education-image flex">
                 <i class="fa-solid fa-graduation-cap"></i>
@@ -185,41 +180,6 @@
                         </div>
                     </div>
                 </div>
-                <script>
-                    var technicalSkillButton = document.getElementById("skill-type-technical")
-                    var developmentButton = document.getElementById("skill-type-development")
-                    var softSkillButton = document.getElementById("skill-type-soft")
-
-                    technicalSkillButton.addEventListener("click", clickTechnicalSkillButton);
-                    function clickTechnicalSkillButton() {
-                        technicalSkillButton.classList.add("skill-type-selector-active")
-                        softSkillButton.classList.remove("skill-type-selector-active")
-                        developmentButton.classList.remove("skill-type-selector-active")
-                        document.getElementById("technical-skills").classList.add("display-skills")
-                        document.getElementById("development-skills").classList.remove("display-skills")
-                        document.getElementById("soft-skills").classList.remove("display-skills")
-                    }
-
-                    developmentButton.addEventListener("click", clickDevelopmentButton);
-                    function clickDevelopmentButton() {
-                        developmentButton.classList.add("skill-type-selector-active")
-                        softSkillButton.classList.remove("skill-type-selector-active")
-                        technicalSkillButton.classList.remove("skill-type-selector-active")
-                        document.getElementById("development-skills").classList.add("display-skills")
-                        document.getElementById("soft-skills").classList.remove("display-skills")
-                        document.getElementById("technical-skills").classList.remove("display-skills")
-                    }
-
-                    softSkillButton.addEventListener("click", clickSoftSkillButton);
-                    function clickSoftSkillButton() {
-                        softSkillButton.classList.add("skill-type-selector-active")
-                        technicalSkillButton.classList.remove("skill-type-selector-active")
-                        developmentButton.classList.remove("skill-type-selector-active")
-                        document.getElementById("soft-skills").classList.add("display-skills")
-                        document.getElementById("technical-skills").classList.remove("display-skills")
-                        document.getElementById("development-skills").classList.remove("display-skills")
-                    }
-                </script>
             </div>
         </section>
         <section class="certifications-page flex" id="certifications-page">
@@ -228,21 +188,19 @@
                     <!-- Certificate - 1 -->
                     <div class="certificate">
                         <div class="certificate-header">
-                            <img src="https://via.placeholder.com/400x200" alt="certificate-image"
+                            <img src="images\Certificate_programmingConceptsForPython.jpeg" alt="certificate-image"
                                 id="certificate-image">
                         </div>
                         <div class="certificate-content flex">
-                            <h3 id="certificate-name">Certificate Name</h3>
+                            <h3 id="certificate-name">Programming Concepts for Python</h3>
                             <p class="certificate-discription">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum sapiente illum quo
-                                nihil
-                                architecto sed quasi nisi pariatur quae eveniet.
+                                LinkedIn Learning Certificate
                             </p>
-                            <a href="">Learn more</a>
+                            <a href="" class="hide">Learn more</a>
                         </div>
                     </div>
                     <!-- Certificate - 2 -->
-                    <div class="certificate">
+                    <div class="certificate hide">
                         <div class="certificate-header">
                             <img src="https://via.placeholder.com/400x200" alt="certificate-image"
                                 id="certificate-image">
@@ -258,7 +216,7 @@
                         </div>
                     </div>
                     <!-- Certificate - 3 -->
-                    <div class="certificate">
+                    <div class="certificate hide">
                         <div class="certificate-header">
                             <img src="https://via.placeholder.com/400x200" alt="certificate-image"
                                 id="certificate-image">
@@ -274,7 +232,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="view-more-certificates flex">
+                <div class="view-more-certificates flex hide">
                     <a href="" class="view-more-button button">View More</a>
                 </div>
 
@@ -286,35 +244,31 @@
                     <!-- project - 1 -->
                     <div class="project">
                         <div class="project-header">
-                            <img src="https://via.placeholder.com/400x200" alt="project-image" id="project-image">
+                            <img src="images\Project_Calculator.jpg" alt="project-image" id="project-image">
                         </div>
                         <div class="project-content flex">
-                            <h3 id="project-name">project Name</h3>
+                            <h3 id="project-name">Calculator Application (C#)</h3>
                             <p class="project-discription">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum sapiente illum quo
-                                nihil
-                                architecto sed quasi nisi pariatur quae eveniet.
+                                A basic calculator built with C# and Windows Forms, supporting arithmetic operations, parentheses, and decimal inputs. It includes error handling and input validation for a smooth user experience.
                             </p>
-                            <a href="">Learn more</a>
+                            <a href="" class="hide">Learn more</a>
                         </div>
                     </div>
                     <!-- project - 2 -->
                     <div class="project">
                         <div class="project-header">
-                            <img src="https://via.placeholder.com/400x200" alt="project-image" id="project-image">
+                            <img src="images\Project_portfolioWebsite.png" alt="project-image" id="project-image">
                         </div>
                         <div class="project-content flex">
-                            <h3 id="project-name">project Name</h3>
+                            <h3 id="project-name">Portfolio Website</h3>
                             <p class="project-discription">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum sapiente illum quo
-                                nihil
-                                architecto sed quasi nisi pariatur quae eveniet.
+                                A personal portfolio website showcasing my projects, skills, and experience. Built using HTML, CSS, and JavaScript, it features a clean and responsive design to effectively display my work and achievements.
                             </p>
-                            <a href="">Learn more</a>
+                            <a href="" class="hide">Learn more</a>
                         </div>
                     </div>
                     <!-- project - 3 -->
-                    <div class="project">
+                    <div class="project hide">
                         <div class="project-header">
                             <img src="https://via.placeholder.com/400x200" alt="project-image" id="project-image">
                         </div>
@@ -329,17 +283,20 @@
                         </div>
                     </div>
                 </div>
-                <div class="view-more-projects flex">
+                <div class="view-more-projects flex hide">
                     <a href="" class="view-more-button button">View More</a>
                 </div>
 
             </div>
         </section>
         <section class="contact-me-page flex" id="contact-me-page">
-            <div class="contact-me-form flex">
+            <form id="contact-me-form" class="contact-me-form flex" action="https://api.web3forms.com/submit" method="POST" novalidate>
                 <h2>Send Me A Message</h2>
-
+                <div id="message-box" class="message-box flex hide">
+                    <strong>Please fill in all fields properly.</strong>
+                </div>
                 <div class="inputs flex">
+                    <input type="hidden" name="access_key" value="6287f66f-7b8f-4b2d-bd38-115bb234cc8f">
                     <input type="text" name="name" id="name" placeholder="Your Name" class="contact-inputs" required>
                     <input type="email" name="email" id="email" placeholder="Your Email" class="contact-inputs"
                         required>
@@ -351,7 +308,8 @@
                 </div>
 
                 <button type="submit" class="button">Submit</button>
-            </div>
+            </form>
+
             <div class="contact-info flex">
                 <h2>Contact Information</h2>
                 <p><i class="fa-solid fa-location-dot"></i> Oshawa, Ontario</p>
@@ -372,7 +330,7 @@
     <footer>
 
     </footer>
-
+    <script src="script.js"></script>
 </body>
 
 </html>

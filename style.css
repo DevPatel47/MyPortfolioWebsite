@@ -21,23 +21,12 @@ body {
     font-family: "Poiret One", serif;
     background-color: var(--primary-background-color);
     color: var(--primary-text-color);
+    align-items: center;
 }
 
 .main-body {
     flex-direction: column;
 }
-/* 
-.bg-effect-object {
-    width: 100px;   
-    height: 100px;
-    margin-top: 10%;
-    margin-left: 30%;
-    box-shadow: 0px 10px 20px var(--secondary-background-color);
-    background-color: var(--secondary-background-color);
-    position: fixed;
-    border-radius: 50%;
-    display: none;
-} */
 
 h1 {
     font-family: "Roboto", serif;
@@ -100,22 +89,31 @@ ul {
     box-shadow: 0px 0px 20px var(--secondary-background-color);
 }
 
+.hide {
+    display: none;
+}
+
 /*---------------------------------------- Nav Bar ---------------------------------------- */
 
-.main-nav {
-    position:fixed;
+body nav {
+    position: fixed;
     width: 100%;
-    height: 12vh;
+    height: 100px;
     box-shadow: 0px 1px 20px var(--secondary-background-color);
-    justify-content: space-between;
     background-color: var(--primary-background-color);
+    justify-content: center;
     z-index: 1;
-    min-height: 80px;
+}
+
+.main-nav {
+    width: 1280px;
+    height: 100px;
+    justify-content: space-between;
+    padding: 30px;
 }
 
 .name-logo {
     letter-spacing: 5px;
-    margin-left: 50px;
     transition: 0.2 ease-out;
 }
 
@@ -126,14 +124,12 @@ ul {
 }
 
 .nav-links {
-    margin-right: 50px;
-    width: 70%;
     overflow: hidden;
 }
 
 .nav-links ul {
     justify-content: end;
-    gap: 50px
+    gap: 50px;
 }
 
 .hover-link {
@@ -143,22 +139,23 @@ ul {
 
 .hover-link:hover {
     color: var(--secondary-text-color);
-    text-shadow: 0px 0px 10px var(--secondary-text-color);  
+    text-shadow: 0px 0px 10px var(--secondary-text-color);
 }
 
 /*---------------------------------------- Home Page ---------------------------------------- */
 
 .home-page {
-    width: 100%;
-    height: 112vh;
-    justify-content: center;
-    overflow: hidden;
+    width: 1280px;
+    height: calc(100vh - 100px);
     min-height: 800px;
+    justify-content: center;
+    margin-top: 100px;
+    padding: 30px;
+    gap: 40px;
 }
 
 .my-image {
-    width: 30%;
-    height: 60%;
+    width: 40%;
     justify-content: center;
 }
 
@@ -167,12 +164,10 @@ ul {
 }
 
 .my-intro {
-    width: 50%;
-    height: 60%;
+    width: 60%;
     flex-direction: column;
     align-items: start;
-    justify-content:center;
-    padding-left: 40px;
+    justify-content: center;
 }
 
 .my-intro h1 {
@@ -219,23 +214,23 @@ ul {
 /*---------------------------------------- Education Page ---------------------------------------- */
 
 .education-page {
-    width: 100%;
-    height: 100vh;
-    justify-content: center;
+    width: 1280px;
+    height: calc(100vh - 100px);
     min-height: 800px;
+    justify-content: center;
+    padding: 30px;
+    gap: 40px;
 }
 
 .education {
-    width: 50%;
-    height: 60%;
+    width: 60%;
     flex-direction: column;
     align-items: end;
-    justify-content:center;
+    justify-content: center;
 }
 
 .education-image {
-    width: 30%;
-    height: 60%;
+    width: 40%;
 }
 
 .education h1 {
@@ -255,15 +250,6 @@ ul {
     color: var(--secondary-text-color);
 }
 
-.education-image {
-    justify-content: center;
-}
-
-.education-image i {
-    font-size: 10rem;
-    color: var(--secondary-text-color);
-}
-
 .education-date {
     margin-top: 30px;
 }
@@ -273,34 +259,40 @@ ul {
     margin-bottom: 5px;
 }
 
-.education ul {
-    font-family: "Poiret One", serif;
-    line-height: 35px;
+.education-image {
+    justify-content: center;
+}
+
+.education-image i {
+    font-size: 12rem;
+    color: var(--secondary-text-color);
 }
 
 /*---------------------------------------- Skills Page ---------------------------------------- */
 
 .skills-page {
-    width: 100%;
-    height: 100vh;
-    min-height: 850px;
+    width: 1280px;
+    height: calc(100vh - 100px);
+    min-height: 800px;
     justify-content: center;
-    padding-top: 80px;
+    padding: 30px;
+    gap: 40px;
 }
 
 .skills-page-content {
-    width: 80%;
-    height: 70%;
+    width: 100%;
     flex-direction: column;
 }
 
 .skill-type-selector {
     width: 100%;
     height: 70px;
-    justify-content:space-between;
+    justify-content: space-between;
 }
 
-.skill-type-technical, .skill-type-development, .skill-type-soft {
+.skill-type-technical,
+.skill-type-development,
+.skill-type-soft {
     width: 30%;
     height: 100%;
     justify-content: center;
@@ -309,9 +301,11 @@ ul {
     transition: 0.3s ease-in-out;
 }
 
-.skill-type-technical:hover, .skill-type-development:hover, .skill-type-soft:hover {
+.skill-type-technical:hover,
+.skill-type-development:hover,
+.skill-type-soft:hover {
     cursor: pointer;
-} 
+}
 
 .skill-type-selector-active {
     background-color: var(--secondary-background-color);
@@ -323,7 +317,9 @@ ul {
     height: calc(100% - 70px);
 }
 
-.technical-skills, .development-skills, .soft-skills {
+.technical-skills,
+.development-skills,
+.soft-skills {
     width: 100%;
     height: 100%;
     display: none;
@@ -343,8 +339,9 @@ ul {
 .skills ul {
     flex-direction: row;
     font-family: "Poiret One", serif;
-    justify-content: space-between;
-    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
 }
 
 .box-layout {
@@ -358,17 +355,18 @@ ul {
 /*---------------------------------------- Certifications Page ---------------------------------------- */
 
 .certifications-page {
-    width: 100%;
-    height: 100vh;
-    justify-content: space-evenly;
+    width: 1280px;
+    height: calc(100vh - 100px);
     min-height: 800px;
-    padding-top: 80px;
+    justify-content: center;
+    padding: 30px;
+    gap: 40px;
 }
 
 .certification-page-content {
-    width: 80%;
-    height: 70%;
+    width: 100%;
     flex-direction: column;
+    gap: 30px;
 }
 
 .certificates-container {
@@ -381,11 +379,11 @@ ul {
     width: 30%;
     height: 100%;
     border-radius: 20px;
-    overflow: hidden;
     border: solid 2px var(--secondary-background-color);
+    overflow: hidden;
 }
 
-.certificate-header{
+.certificate-header {
     width: 100%;
     height: 40%;
 }
@@ -401,6 +399,8 @@ ul {
     justify-content: space-evenly;
     flex-direction: column;
     padding: 10px;
+    gap: 20px;
+    text-align: center;
 }
 
 .certificate-content a {
@@ -409,7 +409,7 @@ ul {
     color: var(--secondary-text-color);
 }
 
-.view-more-certificates { 
+.view-more-certificates {
     width: 100%;
     height: 15%;
     justify-content: center;
@@ -424,21 +424,22 @@ ul {
 .view-more-button:hover {
     transform: scale(1);
 }
+
 /*---------------------------------------- Projects Page ---------------------------------------- */
 
 .projects-page {
-    width: 100%;
-    height: 100vh;
-    justify-content: space-evenly;
+    width: 1280px;
+    height: calc(100vh - 100px);
     min-height: 800px;
-    padding-top: 80px;
+    justify-content: center;
+    padding: 30px;
+    gap: 40px;
 }
 
 .projects-page-content {
-    width: 80%;
-    height: 70%;
+    width: 100%;
     flex-direction: column;
-    overflow: hidden;
+    gap: 30px;  
 }
 
 .projects-container {
@@ -451,11 +452,11 @@ ul {
     width: 30%;
     height: 100%;
     border-radius: 20px;
-    overflow: hidden;
     border: solid 2px var(--secondary-background-color);
+    overflow: hidden;
 }
 
-.project-header{
+.project-header {
     width: 100%;
     height: 40%;
 }
@@ -471,6 +472,8 @@ ul {
     justify-content: space-evenly;
     flex-direction: column;
     padding: 10px;
+    gap: 20px;
+    text-align: center;
 }
 
 .project-content a {
@@ -479,7 +482,7 @@ ul {
     color: var(--secondary-text-color);
 }
 
-.view-more-projects { 
+.view-more-projects {
     width: 100%;
     height: 15%;
     justify-content: center;
@@ -494,22 +497,23 @@ ul {
 .view-more-button:hover {
     transform: scale(1);
 }
+
 /*---------------------------------------- Contact Me Page ---------------------------------------- */
 
 .contact-me-page {
-    width: 100%;
-    height: 100vh;
+    width: 1280px;
+    height: calc(100vh - 100px);
+    min-height: 800px;
     justify-content: center;
-    min-height: 850px;
-    padding-top: 80px;
+    padding: 30px;
 }
 
 .contact-me-form {
-    width: 50%;
-    height: 70%;
+    width: 60%;
+    height: 80%;
     flex-direction: column;
     align-items: center;
-    padding: 40px;
+    padding-top: 40px;
     gap: 30px;
     background-color: var(--secondary-background-color);
     border-radius: 10px 0px 0px 10px;
@@ -553,9 +557,21 @@ ul {
     color: var(--secondary-text-color);
 }
 
+.message-box {
+    font-family: "Roboto", serif;
+    width: 630px;
+    height: 30px;
+    color: red;
+    text-align: center;
+    justify-content: center;
+    background-color: var(--primary-text-color);
+    padding-left: 30px;
+    border-radius: 10px;
+}
+
 .contact-info {
-    width: 30%;
-    height: 70%;
+    width: 40%;
+    height: 80%;
     flex-direction: column;
     padding-top: 40px;
     gap: 30px;
@@ -571,7 +587,7 @@ ul {
 
 .contact-info h2 {
     margin-bottom: 50px;
-} 
+}
 
 .contact-page-sm {
     margin-top: 50px;
