@@ -95,3 +95,8 @@ function validateForm(event) {
 
 // Attach the validation function to the form submit event
 document.getElementById('contact-me-form').addEventListener('submit', validateForm);
+
+// For footer
+const date = new Date();
+const footerYear = document.getElementById('footer-year');
+footerYear.textContent = date.getFullYear();

@@ -4,32 +4,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore my skills, projects, and contact information.">
+    <meta name="author" content="Dev Patel">
+    <meta name="keywords" content="Dev Patel, Portfolio, Web Development, Programming, Projects">
     <title>Dev Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="laptop-media-queries.css">
-    <link rel="stylesheet" href="tablet-media-queries.css">
-    <link rel="stylesheet" href="mobile-media-queries.css">
-    <link rel="shortcut icon" href="images\my-image-1.png" type="image/x-icon">
+
+    <!-- Canonical Link -->
+    <link rel="canonical" href="https://devpatel47.github.io/MyPortfolioWebsite/">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/images/my-image-1.png" type="image/x-icon">
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Dev Portfolio">
+    <meta property="og:description" content="Explore my skills, projects, and contact information.">
+    <meta property="og:image" content="https://devpatel47.github.io/MyPortfolioWebsite/assets/images/og-image.png">
+    <meta property="og:url" content="https://devpatel47.github.io/MyPortfolioWebsite/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Metadata -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Dev Portfolio">
+    <meta name="twitter:description" content="Explore my skills, projects, and contact information.">
+    <meta name="twitter:image" content="https://devpatel47.github.io/MyPortfolioWebsite/assets/images/og-image.png">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/laptop-media-queries.css">
+    <link rel="stylesheet" href="css/tablet-media-queries.css">
+    <link rel="stylesheet" href="css/mobile-media-queries.css">
+
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
+
 <body>
-    <!-- Top Nav Bar -->
-    <nav class="flex">
+
+    <!-- Top Navigation Bar -->
+    <nav class="flex" aria-label="Main Navigation">
         <div class="container main-nav flex">
+            <!-- Logo Section -->
             <div class="name-logo">
+                <!-- DEV Logo -->
                 <h1>DEV.</h1>
             </div>
+            <!-- Navigation Links -->
             <div class="nav-links">
                 <ul class="flex">
-                    <li><a href="#home-page" class="hover-link">Home</a></li>
-                    <li><a href="#education-page" class="hover-link">Education</a></li>
-                    <li><a href="#skills-page" class="hover-link">Skills</a></li>
-                    <li><a href="#certifications-page" class="hover-link">Certifications</a></li>
-                    <li><a href="#projects-page" class="hover-link">Projects</a></li>
-                    <li><a href="#contact-me-page" class="hover-link">Contact Me</a></li>
+                    <!-- Home Link -->
+                    <li>
+                        <a href="#home-page" class="hover-link" aria-label="Navigate to Home Section">Home</a>
+                    </li>
+                    <!-- Education Link -->
+                    <li>
+                        <a href="#education-page" class="hover-link"
+                            aria-label="Navigate to Education Section">Education</a>
+                    </li>
+                    <!-- Skills Link -->
+                    <li>
+                        <a href="#skills-page" class="hover-link" aria-label="Navigate to Skills Section">Skills</a>
+                    </li>
+                    <!-- Certifications Link -->
+                    <li>
+                        <a href="#certifications-page" class="hover-link"
+                            aria-label="Navigate to Certifications Section">Certifications</a>
+                    </li>
+                    <!-- Projects Link -->
+                    <li>
+                        <a href="#projects-page" class="hover-link"
+                            aria-label="Navigate to Projects Section">Projects</a>
+                    </li>
+                    <!-- Contact Me Link -->
+                    <li>
+                        <a href="#contact-me-page" class="hover-link"
+                            aria-label="Navigate to Contact Me Section">Contact Me</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -37,76 +89,137 @@
 
     <!-- Main Body -->
     <main class="main-body flex">
+
+        <!-- Home Page Section -->
         <section class="home-page flex" id="home-page">
+
+            <!-- Profile Image Section -->
             <div class="my-image flex">
-                <img class="img-my" src="images/my-image-1.png" alt="Dev's Photo">
+                <!-- Developer's Photo -->
+                <img class="img-my" src="assets/images/my-image-1.png" alt="A professional photo of Dev Patel" />
             </div>
+
+            <!-- Introduction Section -->
             <div class="my-intro flex">
+                <!-- Greeting and Name -->
                 <h1>Hi, I am <span>Dev Patel</span></h1>
+                <!-- Role Description -->
                 <h2>I am a Full Stack Developer.</h2>
-                <p>I am a Computer Programming and Analysis student at Durham College in Oshawa, Ontario, with a strong
+                <!-- Brief Introduction -->
+                <p>
+                    I am a Computer Programming and Analysis student at Durham College in Oshawa, Ontario, with a strong
                     foundation in web development and software development. I am passionate about learning and applying
                     my skills to solve real-world challenges. I enjoy exploring innovative solutions and contributing to
-                    impactful projects.</p>
+                    impactful projects.
+                </p>
+
+                <!-- Social Media Links -->
                 <div class="social-media flex">
-                    <a href="https://www.linkedin.com/in/devpatel47/" target="_blank" class="social-media-logo"><i
-                            class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/DevPatel47" target="_blank" class="social-media-logo"><i
-                            class="fa-brands fa-github"></i></a>
-                    <a href="https://www.instagram.com/_.dev47/" target="_blank" class="social-media-logo"><i
-                            class="fa-brands fa-instagram"></i></a>
+                    <!-- LinkedIn -->
+                    <a href="https://www.linkedin.com/in/devpatel47/" target="_blank" class="social-media-logo"
+                        aria-label="LinkedIn Profile (Opens in a new tab)">
+                        <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                    <!-- GitHub -->
+                    <a href="https://github.com/DevPatel47" target="_blank" class="social-media-logo"
+                        aria-label="GitHub Profile (Opens in a new tab)">
+                        <i class="fa-brands fa-github" aria-hidden="true"></i>
+                    </a>
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/_.dev47/" target="_blank" class="social-media-logo"
+                        aria-label="Instagram Profile (Opens in a new tab)">
+                        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                    </a>
                 </div>
+
+                <!-- Call-to-Action Buttons -->
                 <div class="intro-buttons flex">
-                    <a href="mailto:dev080405.patel@gmail.com" class="hire-me button">Hire Me</a>
-                    <a href="files\Dev_Resume.pdf" download class="download-resume button">Download My CV</a>
+                    <!-- Hire Me Button -->
+                    <a href="mailto:dev080405.patel@gmail.com" class="hire-me button" aria-label="Email Dev Patel">Hire
+                        Me</a>
+                    <!-- Download Resume Button -->
+                    <a href="assets/files/Dev_Resume.pdf" download class="download-resume button"
+                        aria-label="Download Dev Patel's Resume">
+                        Download My CV
+                    </a>
                 </div>
             </div>
+
         </section>
+
+        <!-- Education Section -->
         <section class="education-page flex" id="education-page">
+
+            <!-- Education Details -->
             <div class="education flex">
+                <!-- Education Title -->
                 <h1>Education</h1>
+                <!-- Program and Institution -->
                 <p class="institution-name"><strong>Computer Programming and Analysis</strong></p>
                 <p>Durham College, Oshawa</p>
-                <a href="https://durhamcollege.ca/programs/computer-programming-analyst-three-year"
-                    target="_blank">Learn more</a>
+                <!-- Link to Program Details -->
+                <a href="https://durhamcollege.ca/programs/computer-programming-analyst-three-year" target="_blank"
+                    aria-label="Learn more about the Computer Programming and Analysis program at Durham College (Opens in a new tab)">Learn
+                    more</a>
+                <!-- Education Duration -->
                 <p class="education-date">September 2023 - April 2026</p>
-                <p class="course-work"><strong>Course work</strong></p>
+                <!-- Course Work Section -->
+                <p class="course-work"><strong>Coursework</strong></p>
+                <!-- Auto-Typed Coursework (Dynamic Content Placeholder) -->
                 <p><span class="course-work-auto-type"></span></p>
+                <!-- Typed.js Script for Dynamic Text -->
                 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
             </div>
+
+            <!-- Education Icon Section -->
             <div class="education-image flex">
-                <i class="fa-solid fa-graduation-cap"></i>
+                <!-- Decorative Graduation Cap Icon -->
+                <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
             </div>
+
         </section>
+
+        <!-- Skills Section -->
         <section class="skills-page flex" id="skills-page">
+
+            <!-- Skills Page Content -->
             <div class="skills-page-content flex">
+                <!-- Skill Type Selector -->
                 <div class="skill-type-selector flex">
+                    <!-- Technical Skills Tab -->
                     <div id="skill-type-technical" class="skill-type-technical skill-type-selector-active flex">
                         <h2>Technical Skills</h2>
                     </div>
+                    <!-- Development Skills Tab -->
                     <div id="skill-type-development" class="skill-type-development flex">
                         <h2>Development Skills</h2>
                     </div>
+                    <!-- Soft Skills Tab -->
                     <div id="skill-type-soft" class="skill-type-soft flex">
                         <h2>Soft Skills</h2>
                     </div>
                 </div>
+
+                <!-- Skills Display Area -->
                 <div class="skills">
+                    <!-- Technical Skills Section -->
                     <div id="technical-skills" class="technical-skills display-skills">
+                        <!-- Programming Languages and Web Development -->
                         <div class="programming-languages-and-web-development flex box-layout">
                             <p><strong>Programming Languages and Web Development</strong></p>
                             <ul class="flex">
-                                <li><i class="fa-brands fa-python"></i> Python</li>
-                                <li><i class="fa-brands fa-java"></i> Java</li>
-                                <li><i class="fa-brands fa-js"></i> JavaScript</li>
+                                <li><i class="fa-brands fa-python" aria-hidden="true"></i> Python</li>
+                                <li><i class="fa-brands fa-java" aria-hidden="true"></i> Java</li>
+                                <li><i class="fa-brands fa-js" aria-hidden="true"></i> JavaScript</li>
                                 <li>C#</li>
-                                <li><i class="fa-brands fa-php"></i> PHP</li>
-                                <li><i class="fa-brands fa-html5"></i> HTML5</li>
-                                <li><i class="fa-brands fa-css3-alt"></i> CSS3</li>
+                                <li><i class="fa-brands fa-php" aria-hidden="true"></i> PHP</li>
+                                <li><i class="fa-brands fa-html5" aria-hidden="true"></i> HTML5</li>
+                                <li><i class="fa-brands fa-css3-alt" aria-hidden="true"></i> CSS3</li>
                                 <li>Bootstrap</li>
                                 <li>.Net</li>
                             </ul>
                         </div>
+                        <!-- Databases and Server Management -->
                         <div class="databases-and-server-management flex box-layout">
                             <p><strong>Databases and Server Management</strong></p>
                             <ul class="flex">
@@ -116,11 +229,12 @@
                                 <li>Linux Server</li>
                             </ul>
                         </div>
+                        <!-- Development Tools and Testing Frameworks -->
                         <div class="development-tools-and-testing-frameworks flex box-layout">
                             <p><strong>Development Tools and Testing Frameworks</strong></p>
                             <ul class="flex">
-                                <li><i class="fa-brands fa-git-alt"></i> Git</li>
-                                <li><i class="fa-brands fa-github"></i> GitHub</li>
+                                <li><i class="fa-brands fa-git-alt" aria-hidden="true"></i> Git</li>
+                                <li><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</li>
                                 <li>Visual Studio Code</li>
                                 <li>Visual Studio</li>
                                 <li>Pycharm</li>
@@ -129,15 +243,19 @@
                             </ul>
                         </div>
                     </div>
+
+                    <!-- Development Skills Section -->
                     <div id="development-skills" class="development-skills">
+                        <!-- Software Development -->
                         <div class="software-development flex box-layout">
                             <p><strong>Software Development</strong></p>
                             <ul class="flex">
                                 <li>Object-Oriented Programming (OOP)</li>
                                 <li>Software Design Principles</li>
-                                <li>Software development lifecycle (SDLC)</li>
+                                <li>Software Development Lifecycle (SDLC)</li>
                             </ul>
                         </div>
+                        <!-- Testing and Debugging -->
                         <div class="testing-and-debugging flex box-layout">
                             <p><strong>Testing and Debugging</strong></p>
                             <ul class="flex">
@@ -146,6 +264,7 @@
                                 <li>Unit Testing</li>
                             </ul>
                         </div>
+                        <!-- Problem Solving -->
                         <div class="problem-solving flex box-layout">
                             <p><strong>Problem Solving</strong></p>
                             <ul class="flex">
@@ -153,7 +272,10 @@
                             </ul>
                         </div>
                     </div>
+
+                    <!-- Soft Skills Section -->
                     <div id="soft-skills" class="soft-skills">
+                        <!-- Communication and Teamwork -->
                         <div class="communication-and-teamwork flex box-layout">
                             <p><strong>Communication and Teamwork</strong></p>
                             <ul class="flex">
@@ -162,6 +284,7 @@
                                 <li>Adaptability</li>
                             </ul>
                         </div>
+                        <!-- Critical Thinking and Creativity -->
                         <div class="testing-and-debugging flex box-layout">
                             <p><strong>Critical Thinking & Creativity</strong></p>
                             <ul class="flex">
@@ -170,6 +293,7 @@
                                 <li>Innovation</li>
                             </ul>
                         </div>
+                        <!-- Time and Task Management -->
                         <div class="problem-solving flex box-layout">
                             <p><strong>Time and Task Management</strong></p>
                             <ul class="flex">
@@ -181,156 +305,210 @@
                     </div>
                 </div>
             </div>
+
         </section>
+
         <section class="certifications-page flex" id="certifications-page">
             <div class="certification-page-content flex">
+                <!-- Certificates Container -->
                 <div class="certificates-container flex">
                     <!-- Certificate - 1 -->
                     <div class="certificate">
                         <div class="certificate-header">
-                            <img src="images\Certificate_programmingConceptsForPython.jpeg" alt="certificate-image"
-                                id="certificate-image">
+                            <img src="assets/images/Certificate_programmingConceptsForPython.jpeg"
+                                alt="Programming Concepts for Python certificate image" id="certificate-image">
                         </div>
                         <div class="certificate-content flex">
                             <h3 id="certificate-name">Programming Concepts for Python</h3>
                             <p class="certificate-discription">
                                 LinkedIn Learning Certificate
                             </p>
-                            <a href="" class="hide">Learn more</a>
+                            <a href="#" class="hide">Learn more</a>
                         </div>
                     </div>
                     <!-- Certificate - 2 -->
                     <div class="certificate hide">
                         <div class="certificate-header">
-                            <img src="https://via.placeholder.com/400x200" alt="certificate-image"
+                            <img src="https://via.placeholder.com/400x200" alt="Placeholder certificate image"
                                 id="certificate-image">
                         </div>
                         <div class="certificate-content flex">
                             <h3 id="certificate-name">Certificate Name</h3>
                             <p class="certificate-discription">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum sapiente illum quo
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum sapiente illum quo
                                 nihil
                                 architecto sed quasi nisi pariatur quae eveniet.
                             </p>
-                            <a href="">Learn more</a>
+                            <a href="#">Learn more</a>
                         </div>
                     </div>
                     <!-- Certificate - 3 -->
                     <div class="certificate hide">
                         <div class="certificate-header">
-                            <img src="https://via.placeholder.com/400x200" alt="certificate-image"
+                            <img src="https://via.placeholder.com/400x200" alt="Placeholder certificate image"
                                 id="certificate-image">
                         </div>
                         <div class="certificate-content flex">
                             <h3 id="certificate-name">Certificate Name</h3>
                             <p class="certificate-discription">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum sapiente illum quo
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum sapiente illum quo
                                 nihil
                                 architecto sed quasi nisi pariatur quae eveniet.
                             </p>
-                            <a href="">Learn more</a>
+                            <a href="#">Learn more</a>
                         </div>
                     </div>
                 </div>
+                <!-- View More Certificates -->
                 <div class="view-more-certificates flex hide">
-                    <a href="" class="view-more-button button">View More</a>
+                    <a href="#" class="view-more-button button">View More</a>
                 </div>
-
             </div>
         </section>
+
         <section class="projects-page flex" id="projects-page">
+
             <div class="projects-page-content flex">
+                <!-- Projects Container -->
                 <div class="projects-container flex">
-                    <!-- project - 1 -->
+                    <!-- Project - 1 -->
                     <div class="project">
                         <div class="project-header">
-                            <img src="images\Project_Calculator.jpg" alt="project-image" id="project-image">
+                            <img src="assets/images/Project_Calculator.jpg" alt="Calculator Application project image"
+                                id="project-image">
                         </div>
                         <div class="project-content flex">
                             <h3 id="project-name">Calculator Application (C#)</h3>
                             <p class="project-discription">
-                                A basic calculator built with C# and Windows Forms, supporting arithmetic operations, parentheses, and decimal inputs. It includes error handling and input validation for a smooth user experience.
+                                A basic calculator built with C# and Windows Forms, supporting arithmetic operations,
+                                parentheses, and decimal inputs. It includes error handling and input validation for a
+                                smooth user experience.
                             </p>
-                            <a href="" class="hide">Learn more</a>
+                            <a href="#" class="hide">Learn more</a>
                         </div>
                     </div>
-                    <!-- project - 2 -->
+                    <!-- Project - 2 -->
                     <div class="project">
                         <div class="project-header">
-                            <img src="images\Project_portfolioWebsite.png" alt="project-image" id="project-image">
+                            <img src="assets/images/Project_portfolioWebsite.png" alt="Portfolio Website project image"
+                                id="project-image">
                         </div>
                         <div class="project-content flex">
                             <h3 id="project-name">Portfolio Website</h3>
                             <p class="project-discription">
-                                A personal portfolio website showcasing my projects, skills, and experience. Built using HTML, CSS, and JavaScript, it features a clean and responsive design to effectively display my work and achievements.
+                                A personal portfolio website showcasing my projects, skills, and experience. Built using
+                                HTML, CSS, and JavaScript, it features a clean and responsive design to effectively
+                                display my work and achievements.
                             </p>
-                            <a href="" class="hide">Learn more</a>
+                            <a href="#" class="hide">Learn more</a>
                         </div>
                     </div>
-                    <!-- project - 3 -->
+                    <!-- Project - 3 -->
                     <div class="project hide">
                         <div class="project-header">
-                            <img src="https://via.placeholder.com/400x200" alt="project-image" id="project-image">
+                            <img src="https://via.placeholder.com/400x200" alt="Placeholder project image"
+                                id="project-image">
                         </div>
                         <div class="project-content flex">
-                            <h3 id="project-name">project Name</h3>
+                            <h3 id="project-name">Project Name</h3>
                             <p class="project-discription">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum sapiente illum quo
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum sapiente illum quo
                                 nihil
                                 architecto sed quasi nisi pariatur quae eveniet.
                             </p>
-                            <a href="">Learn more</a>
+                            <a href="#">Learn more</a>
                         </div>
                     </div>
                 </div>
+                <!-- View More Projects -->
                 <div class="view-more-projects flex hide">
-                    <a href="" class="view-more-button button">View More</a>
+                    <a href="#" class="view-more-button button">View More</a>
                 </div>
-
             </div>
+
         </section>
+
         <section class="contact-me-page flex" id="contact-me-page">
-            <form id="contact-me-form" class="contact-me-form flex" action="https://api.web3forms.com/submit" method="POST" novalidate>
+
+            <!-- Contact Form -->
+            <form id="contact-me-form" class="contact-me-form flex" action="https://api.web3forms.com/submit"
+                method="POST" novalidate>
                 <h2>Send Me A Message</h2>
+
+                <!-- Message Box (will appear if the form is incomplete) -->
                 <div id="message-box" class="message-box flex hide">
                     <strong>Please fill in all fields properly.</strong>
                 </div>
+
                 <div class="inputs flex">
+                    <!-- Hidden Input for Web3 Forms API Key -->
                     <input type="hidden" name="access_key" value="6287f66f-7b8f-4b2d-bd38-115bb234cc8f">
-                    <input type="text" name="name" id="name" placeholder="Your Name" class="contact-inputs" required>
-                    <input type="email" name="email" id="email" placeholder="Your Email" class="contact-inputs"
-                        required>
+
+                    <!-- Name Input -->
+                    <input type="text" name="name" id="name" placeholder="Your Name" class="contact-inputs" required
+                        aria-label="Your Name">
+
+                    <!-- Email Input -->
+                    <input type="email" name="email" id="email" placeholder="Your Email" class="contact-inputs" required
+                        aria-label="Your Email">
+
+                    <!-- Phone Number Input -->
                     <input type="tel" name="tel" id="tel" placeholder="Your Phone Number" class="contact-inputs"
-                        required>
+                        required aria-label="Your Phone Number">
+
+                    <!-- Company Name Input -->
                     <input type="text" name="company" id="company" placeholder="Your Company Name"
-                        class="contact-inputs">
-                    <textarea name="message" id="message" placeholder="Your Message" class="contact-inputs"></textarea>
+                        class="contact-inputs" aria-label="Your Company Name">
+
+                    <!-- Message Textarea -->
+                    <textarea name="message" id="message" placeholder="Your Message" class="contact-inputs"
+                        aria-label="Your Message"></textarea>
                 </div>
 
+                <!-- Submit Button -->
                 <button type="submit" class="button">Submit</button>
             </form>
 
+            <!-- Contact Information Section -->
             <div class="contact-info flex">
                 <h2>Contact Information</h2>
-                <p><i class="fa-solid fa-location-dot"></i> Oshawa, Ontario</p>
-                <p><i class="fa-solid fa-phone"></i> 437-662-2859</p>
-                <p><i class="fa-solid fa-envelope"></i> dev080405.patel@gmail.com</p>
+
+                <!-- Location -->
+                <p><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Oshawa, Ontario</p>
+
+                <!-- Phone Number -->
+                <p><i class="fa-solid fa-phone" aria-hidden="true"></i> 437-662-2859</p>
+
+                <!-- Email Address -->
+                <p><i class="fa-solid fa-envelope" aria-hidden="true"></i> dev080405.patel@gmail.com</p>
+
+                <!-- Social Media Links -->
                 <div class="social-media flex contact-page-sm">
-                    <a href="https://www.linkedin.com/in/devpatel47/" target="_blank" class="social-media-logo"><i
-                            class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/DevPatel47" target="_blank" class="social-media-logo"><i
-                            class="fa-brands fa-github"></i></a>
-                    <a href="https://www.instagram.com/_.dev47/" target="_blank" class="social-media-logo"><i
-                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/devpatel47/" target="_blank" class="social-media-logo"
+                        aria-label="LinkedIn Profile">
+                        <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://github.com/DevPatel47" target="_blank" class="social-media-logo"
+                        aria-label="GitHub Profile">
+                        <i class="fa-brands fa-github" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.instagram.com/_.dev47/" target="_blank" class="social-media-logo"
+                        aria-label="Instagram Profile">
+                        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                    </a>
                 </div>
             </div>
+
         </section>
+
     </main>
 
+    <!-- Footer Section -->
     <footer>
-
+        <p>&copy; <span id="footer-year"></span> Dev Mayurkumar Patel. All rights reserved.</p>
     </footer>
-    <script src="script.js"></script>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
