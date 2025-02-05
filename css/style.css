@@ -219,6 +219,7 @@ body nav {
     min-height: 800px;
     justify-content: center;
     padding: 30px;
+    padding-top: 100px;
     gap: 40px;
 }
 
@@ -239,7 +240,7 @@ body nav {
     margin-bottom: 40px;
 }
 
-.institution-name {
+.course-name {
     font-size: 2rem;
     margin-bottom: 10px;
 }
@@ -276,6 +277,7 @@ body nav {
     min-height: 800px;
     justify-content: center;
     padding: 30px;
+    padding-top: 100px;
     gap: 40px;
 }
 
@@ -360,6 +362,7 @@ body nav {
     min-height: 800px;
     justify-content: center;
     padding: 30px;
+    padding-top: 100px;
     gap: 40px;
 }
 
@@ -373,6 +376,12 @@ body nav {
     height: 100%;
     width: 100%;
     justify-content: space-around;
+}
+
+.certification-page-content h2 {
+    font-size: 4rem;
+    color: var(--secondary-text-color);
+    margin: 20px;
 }
 
 .certificate {
@@ -433,6 +442,7 @@ body nav {
     min-height: 800px;
     justify-content: center;
     padding: 30px;
+    padding-top: 100px;
     gap: 40px;
 }
 
@@ -446,6 +456,12 @@ body nav {
     height: 100%;
     width: 100%;
     justify-content: space-around;
+}
+
+.projects-page-content h2 {
+    font-size: 4rem;
+    color: var(--secondary-text-color);
+    margin: 20px;
 }
 
 .project {
@@ -506,6 +522,7 @@ body nav {
     min-height: 800px;
     justify-content: center;
     padding: 30px;
+    padding-top: 100px;
 }
 
 .contact-me-form {
@@ -595,4 +612,12 @@ body nav {
 
 .contact-page-sm .social-media-logo i {
     color: var(--primary-text-color);
+}
+
+/*---------------------------------------- Footer ---------------------------------------- */
+
+.footer-container {
+    height: 50px;
+    justify-content: center;
+    align-items: center;
 }
