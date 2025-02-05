@@ -23,12 +23,12 @@ The site features a modern and user-friendly design with smooth navigation, opti
 
 ## Screenshots
 
-![Home page]().
-![Eductaion page]().
-![Skills page]().
-![Certifications page]().
-![Project page]().
-![Contact Me page]().
+![Home page](https://github.com/DevPatel47/MyPortfolioWebsite/blob/main/Screenshots/home.png).
+![Eductaion page](https://github.com/DevPatel47/MyPortfolioWebsite/blob/main/Screenshots/education.png).
+![Skills page](https://github.com/DevPatel47/MyPortfolioWebsite/blob/main/Screenshots/skills.png).
+![Certifications page](https://github.com/DevPatel47/MyPortfolioWebsite/blob/main/Screenshots/certifications.png).
+![Project page](https://github.com/DevPatel47/MyPortfolioWebsite/blob/main/Screenshots/projects.png).
+![Contact Me page](https://github.com/DevPatel47/MyPortfolioWebsite/blob/main/Screenshots/contact-me.png).
 
 ## Technologies Used
 
