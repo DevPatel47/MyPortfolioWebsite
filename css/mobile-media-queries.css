@@ -124,6 +124,7 @@
     .skills-page {
         width: 425px;
         flex-direction: column;
+        height: 150vh;
     }
     .skill-type-selector h2{
         text-align: center;
@@ -153,6 +154,10 @@
     .certificate {
         width: 100%;
         height: 600px;
+    }
+
+    .certificate-header {
+        height: 50%;
     }
 
     /*---------------------------------------- Projects Page ---------------------------------------- */

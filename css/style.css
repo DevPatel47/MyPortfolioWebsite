@@ -617,7 +617,9 @@ body nav {
 /*---------------------------------------- Footer ---------------------------------------- */
 
 .footer-container {
+    width: 100vw;
     height: 50px;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
