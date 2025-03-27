@@ -1,3 +1,4 @@
+
 // For education page
 var typed = new Typed(".course-work-auto-type", {
     strings: ["Software Development", "Web Development", "Object Oriented Programming", "Software testing", "Systems Development", "Database Development"],
@@ -55,7 +56,7 @@ function validateForm(event) {
     const messageBox = document.getElementById('message-box');
 
     // Clear previous validation messages
-    messageBox.classList.add('d-none');
+    messageBox.classList.add('hide');
 
     let valid = true;
 
@@ -87,8 +88,9 @@ function validateForm(event) {
         document.getElementById('contact-me-form').submit();
         document.getElementById('contact-me-form').reset();
     } else {
-        messageBox.classList.remove('d-none');
+        messageBox.classList.remove('hide');
     }
+
 
 }
 
