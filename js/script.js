@@ -55,7 +55,7 @@ function validateForm(event) {
     const messageBox = document.getElementById('message-box');
 
     // Clear previous validation messages
-    messageBox.classList.add('hide');
+    messageBox.classList.add('d-none');
 
     let valid = true;
 
@@ -87,9 +87,8 @@ function validateForm(event) {
         document.getElementById('contact-me-form').submit();
         document.getElementById('contact-me-form').reset();
     } else {
-        messageBox.classList.remove('hide');
+        messageBox.classList.remove('d-none');
     }
-
 
 }
 

@@ -382,21 +382,21 @@
 
         </section>
 
-        <section class="contact-me-page flex" id="contact-me-page">
+        <section class="contact-me-page" id="contact-me-page">
 
             <!-- Contact Form -->
-            <form id="contact-me-form" class="contact-me-form flex" action="https://api.web3forms.com/submit"
+            <form id="contact-me-form" class="contact-me-form" action="https://api.web3forms.com/submit"
                 method="POST" novalidate>
                 <h2>Send Me A Message</h2>
 
                 <!-- Message Box (will appear if the form is incomplete) -->
-                <div id="message-box" class="message-box flex hide">
+                <div id="message-box" class="message-box d-none">
                     <strong>Please fill in all fields properly.</strong>
                 </div>
 
                 <div class="inputs flex">
                     <!-- Hidden Input for Web3 Forms API Key -->
-                    <input type="hidden" name="access_key" value="6287f66f-7b8f-4b2d-bd38-115bb234cc8f">
+                    <input type="hidden" name="access_key" value="">
 
                     <!-- Name Input -->
                     <input type="text" name="name" id="name" placeholder="Your Name" class="contact-inputs" required
